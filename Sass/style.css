@@ -1,0 +1,170 @@
+@import url(/Sass/cssreload.css);
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Space Mono";
+}
+body p {
+  color: hsl(184, 14%, 56%);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  max-width: 500px;
+  gap: 20px;
+  padding: 20px;
+}
+.wrap .titulo {
+  color: hsl(184, 14%, 56%);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.wrap .porcentaje {
+  display: flex;
+  flex-direction: column;
+}
+.wrap .porcentaje .bill {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  height: 35px;
+  text-align: right;
+  padding: 10px;
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono";
+  font-size: 1.2rem;
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wrap .porcentaje .img {
+  position: relative;
+  top: -12px;
+  left: 10px;
+}
+.wrap .porcentaje .tips {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.wrap .porcentaje .tips .btn {
+  height: 30px;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: 0;
+  font-family: "Space Mono";
+  height: 35px;
+}
+.wrap .porcentaje .tips .btn:hover {
+  background-color: hsl(185, 59%, 72%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+.wrap .porcentaje .tips .active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.wrap .porcentaje .tips .custom {
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  color: hsl(186, 14%, 43%);
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: hsl(172, 67%, 45%);
+}
+.wrap .porcentaje .tips .custom::-moz-placeholder {
+  color: hsl(184, 14%, 56%);
+  font-family: "Space Mono";
+  text-align: right;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-color: hsl(172, 67%, 45%);
+}
+.wrap .porcentaje .tips .custom::placeholder {
+  color: hsl(184, 14%, 56%);
+  font-family: "Space Mono";
+  text-align: right;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-color: hsl(172, 67%, 45%);
+}
+.wrap .porcentaje .tips .btn-1, .wrap .porcentaje .tips .btn-3, .wrap .porcentaje .tips .btn-5 {
+  grid-column: 1/2;
+}
+.wrap .porcentaje .tips .btn-2, .wrap .porcentaje .tips .btn-4, .wrap .porcentaje .tips .btn-6 {
+  grid-column: 2/3;
+}
+.wrap .result {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+.wrap .result .total-tips {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .result .total-tips .total_person, .wrap .result .total-tips .amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.wrap .result .total-tips .total_person p, .wrap .result .total-tips .amount p {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 100%);
+}
+.wrap .result .total-tips .total_person p span, .wrap .result .total-tips .amount p span {
+  font-size: 0.5rem;
+  color: hsl(184, 14%, 56%);
+}
+.wrap .result .total-tips .total_person input, .wrap .result .total-tips .amount input {
+  width: 40%;
+  background-color: transparent;
+  color: hsl(172, 67%, 45%);
+  font-family: "Space Mono";
+  font-size: 1.4rem;
+  border: 0;
+  text-align: right;
+  cursor: pointer;
+}
+.wrap .result .reset {
+  width: 100%;
+  background-color: hsl(172, 67%, 45%);
+  border: 0;
+  border-radius: 5px;
+  height: 35px;
+  color: hsl(186, 14%, 43%);
+  font-family: "Space Mono";
+  text-transform: uppercase;
+  color: hsl(183, 100%, 15%);
+  font-size: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

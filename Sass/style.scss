@@ -1,0 +1,196 @@
+@import url(/Sass/cssreload.css);
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+$Strongcyan: hsl(172, 67%, 45%);
+$Verydarkcyan: hsl(183, 100%, 15%);
+$Darkgrayishcyan: hsl(186, 14%, 43%);
+$Grayishcyan: hsl(184, 14%, 56%);
+$Lightgrayishcyan: hsl(185, 41%, 84%);
+$Verylightgrayishcyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+$font: 'Space Mono';
+
+body{
+    background-color: $Lightgrayishcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: $font;
+    p{
+        color: $Grayishcyan;
+    }
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: $White;
+    width: 100%;
+    max-width: 500px;
+    gap: 20px;
+    padding: 20px;
+    .titulo{
+        
+        color: $Grayishcyan;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .porcentaje{
+        display: flex;
+        flex-direction: column;
+        .bill{
+            margin-top: 10px;
+            width: 100%;
+            position: relative;
+            height: 35px;
+            text-align: right;
+            padding: 10px;
+            color: $Verydarkcyan;
+            font-family: $font;
+            font-size: 1.2rem;
+            background-color: $Verylightgrayishcyan;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .img{
+            position: relative;
+            top: -12px;
+            left: 10px;
+
+        }
+        
+
+        .tips{
+            
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            place-content: center;
+            gap: 10px;
+
+            .btn{
+                
+                height: 30px;
+                border-radius: 5px;
+                background-color: $Verydarkcyan;
+                color: $White;
+                border: 0;
+                font-family: $font;
+                height: 35px;
+            }
+
+            .btn:hover{
+                background-color: hsl(185, 59%, 72%);
+                color: $Verydarkcyan;
+                cursor: pointer;
+            }
+
+            
+            .active{
+                background-color: $Strongcyan;
+                color: $Verydarkcyan;
+            }
+
+            .custom{
+                background-color: $Verylightgrayishcyan;
+                border: 0;
+                color: $Darkgrayishcyan;
+                border-radius: 5px;
+                cursor: pointer;
+                border-color: $Strongcyan;
+                
+            }
+            .custom::placeholder{
+                color: $Grayishcyan;
+                font-family: $font;
+                text-align: right;
+                padding: 10px;
+                font-size: 1rem;
+                font-weight: 700;
+                border-color: $Strongcyan;
+                
+            }
+            .btn-1, .btn-3, .btn-5{
+                grid-column: 1/2;
+            }
+            .btn-2, .btn-4, .btn-6{
+                grid-column: 2/3;
+            }
+            margin-bottom: 10px;
+        }
+
+
+    }
+
+    .result{
+
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-color: $Verydarkcyan;
+        border-radius: 10px;
+        .total-tips{
+            width: 100%;    
+            gap: 10px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .total_person, .amount{
+                p{
+                    font-size: 0.7rem;
+                    color: $White;
+                    span{
+                        font-size: 0.5rem;
+                        color: $Grayishcyan;
+                    }
+                }
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                input{
+                    width: 40%;
+                    background-color: transparent;
+                    color: $Strongcyan;
+                    font-family: $font;
+                    font-size: 1.4rem;
+                    border: 0;
+                    text-align: right;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+
+        .reset{
+            width: 100%;
+            background-color: $Strongcyan;
+            border: 0;
+            border-radius: 5px;
+            height: 35px;
+            color: $Darkgrayishcyan;
+            font-family: $font;
+            text-transform: uppercase;
+            color: $Verydarkcyan;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
