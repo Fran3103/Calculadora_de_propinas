@@ -15,27 +15,41 @@
   </style>
 </head>
 <body>
-    <img src="/images/logo.svg" alt="logo">
+    <img src="/images/logo.svg" alt="logo" class="logo">
     <div class="wrap">
       
       <div class="porcentaje">
-        <form action="#">
-          <label for="bill"  class="titulo">Bill</label>
-          <input type="number" src="/images/icon-person.svg" id="bill">
-        </form>
 
-        <div class="tips">
-          <p class="titulo">Select Tip %</p>
-          <button class="btn">5%</button>
-          <button class="btn">10%</button>
-          <button class="btn">15%</button>
-          <button class="btn">25%</button>
-          <button class="btn">50%</button>
-          <input type="text" placeholder="Custom" class="custom">
+        <div class="bills">
+
+          <p class="titulo">Bill</p>
+          <input type="number" class="bill" id="propinas"  value="100">
+
+          <div class="img">
+            <img class="img" src="/images/icon-dollar.svg" alt="icon-dollar">
+          </div>
+          
         </div>
 
-        <label for="person" class="titulo">Number of People</label>
-        <input type="number" id="person" class="person"   src="/images/icon-person.svg">
+        <p class="titulo">Select Tip %</p>
+        <div class="tips">
+          
+          <button id="5" class="btn btn-1">5%</button>
+          <button id="10" class="btn btn-2">10%</button>
+          <button id="15" class="btn btn-3 active">15%</button>
+          <button id="25" class="btn btn-4">25%</button>
+          <button id="50" class="btn btn-5">50%</button>
+          <input type="number" id="custom" placeholder="Custom" class="custom btn-6">
+        </div>
+
+        <div class="people">
+          <p class="titulo">Number of People</p>
+          <input type="number" id="person" class="person bill" value="5">
+          <div class="img">
+            <img class="img" src="/images/icon-person.svg" alt="people">
+          </div>
+        </div>
+        
       </div>
 
       <div class="result">
@@ -43,17 +57,17 @@
         <div class="total-tips">
           <div class="amount">
             <p>Tip Amount  <br> <span> / person</span></p>
-            <input type="number" class="total">
+            <p  class="total p" id="amount">0</p> 
           </div>
 
           <div class="total_person">
             <p>Total <br> <span>/ person</span></p>
-            <input type="number" class="total-person-tips">
+            <p  class="total-person-tips p" id="total-person">0</p>
           </div>
         </div>
 
-        <button class="reset">Reset </button>
-        
+        <button class="reset" id="reset">Reset </button>
+
       </div>
 
 
@@ -61,7 +75,11 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/franco-aguirre-24855012a/
+    " target="_blank">Franco Aguirre</a>.
   </div>
+
+  <script src="/js/main.js"></script>
 </body>
+
 </html>

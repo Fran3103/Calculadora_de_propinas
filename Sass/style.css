@@ -56,29 +56,26 @@ body p {
 .wrap .porcentaje .tips {
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 47% 47%;
   grid-template-rows: 1fr 1fr 1fr;
   place-content: center;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 10px;
 }
 .wrap .porcentaje .tips .btn {
-  height: 30px;
+  width: 100%;
+  height: 35px;
   border-radius: 5px;
   background-color: hsl(183, 100%, 15%);
   color: hsl(0, 0%, 100%);
   border: 0;
   font-family: "Space Mono";
-  height: 35px;
+  text-align: center;
 }
 .wrap .porcentaje .tips .btn:hover {
   background-color: hsl(185, 59%, 72%);
   color: hsl(183, 100%, 15%);
   cursor: pointer;
-}
-.wrap .porcentaje .tips .active {
-  background-color: hsl(172, 67%, 45%);
-  color: hsl(183, 100%, 15%);
 }
 .wrap .porcentaje .tips .custom {
   background-color: hsl(189, 41%, 97%);
@@ -87,24 +84,15 @@ body p {
   border-radius: 5px;
   cursor: pointer;
   border-color: hsl(172, 67%, 45%);
-}
-.wrap .porcentaje .tips .custom::-moz-placeholder {
-  color: hsl(184, 14%, 56%);
-  font-family: "Space Mono";
   text-align: right;
-  padding: 10px;
-  font-size: 1rem;
-  font-weight: 700;
-  border-color: hsl(172, 67%, 45%);
-}
-.wrap .porcentaje .tips .custom::placeholder {
-  color: hsl(184, 14%, 56%);
+  padding-right: 15px;
   font-family: "Space Mono";
-  text-align: right;
-  padding: 10px;
   font-size: 1rem;
-  font-weight: 700;
-  border-color: hsl(172, 67%, 45%);
+}
+.wrap .porcentaje .tips .active {
+  width: 100%;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 .wrap .porcentaje .tips .btn-1, .wrap .porcentaje .tips .btn-3, .wrap .porcentaje .tips .btn-5 {
   grid-column: 1/2;
@@ -145,7 +133,7 @@ body p {
   font-size: 0.5rem;
   color: hsl(184, 14%, 56%);
 }
-.wrap .result .total-tips .total_person input, .wrap .result .total-tips .amount input {
+.wrap .result .total-tips .total_person .p, .wrap .result .total-tips .amount .p {
   width: 40%;
   background-color: transparent;
   color: hsl(172, 67%, 45%);
@@ -167,4 +155,66 @@ body p {
   color: hsl(183, 100%, 15%);
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 550px) {
+  .logo {
+    width: 100px;
+    margin: 40px 0;
+    margin-top: 60px;
+  }
+  .wrap {
+    flex-direction: row;
+    max-width: 900px;
+    max-height: 600px;
+  }
+  .wrap .porcentaje {
+    gap: 30px;
+    width: 50%;
+  }
+  .wrap .porcentaje .tips {
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr;
+  }
+  .wrap .porcentaje .tips .btn-1, .wrap .porcentaje .tips .btn-4 {
+    grid-column: 1/2;
+  }
+  .wrap .porcentaje .tips .btn-2, .wrap .porcentaje .tips .btn-5 {
+    grid-column: 2/3;
+  }
+  .wrap .porcentaje .tips .btn-3, .wrap .porcentaje .tips .btn-6 {
+    grid-column: 3/3;
+  }
+  .wrap .result {
+    width: 50%;
+    justify-content: space-between;
+  }
+  .wrap .result .total-tips {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 660px) {
+  .wrap .porcentaje .tips {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .wrap .porcentaje .tips {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 870px) {
+  .wrap .titulo {
+    font-size: 1rem;
+  }
+  .wrap .porcentaje .tips {
+    width: 100%;
+  }
+  .wrap .result .total-tips .total_person p, .wrap .result .total-tips .amount p {
+    font-size: 1rem;
+  }
+  .wrap .result .total-tips .total_person p span, .wrap .result .total-tips .amount p span {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=style.css.map */
